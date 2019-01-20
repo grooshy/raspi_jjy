@@ -1,0 +1,9 @@
+[Unit]
+Description=send jjy timerecord service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/env python /home/pi/jjy_timerecord.py
+
+[Install]
+WantedBy=multi-user.target
